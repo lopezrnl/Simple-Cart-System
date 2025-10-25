@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Product Section */
+.products {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 55%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.product-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    background: #fafafa;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background: #218838;
+}
+
+/* Cart Section */
+.cart {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.cart-total {
+    text-align: right;
+    margin: 10px 0;
+}
+
+.checkout {
+    background: #007bff;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout:hover {
+    background: #0069d9;
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products,
+    .cart {
+        width: 90%;
+    }
+
+    .product-list {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .checkout {
+        font-size: 16px;
+    }
+}
