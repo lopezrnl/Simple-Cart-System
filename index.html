@@ -1,70 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Cart System</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Street Cart</title>
+  <link rel="stylesheet" href="src/input.css" />
 </head>
+
 <body>
 
-    <header>
-        <h1>Street Cart</h1>
-    </header>
+<main id="main">
 
-    <main>
-        <section class="products">
-            <h2>Products</h2>
-            <article class="product-list">
-                <div class="product">
-                    <img src="" alt="">
-                    <h3>Nuggets</h3>
-                    <p>₱5.00</p>
-                    <button>Add to Cart</button>
-                </div>
+  <section>
+    <h2>Street Foods</h2>
+    <article>
+      <div class="product-list">
+        <div class="product">
+          <h3>Isaw Manok</h3>
+          <p>P5</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Isaw Baboy</h3>
+          <p>P6</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Betamax</h3>
+          <p>P5</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Kwek Kwek</h3>
+          <p>P10</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </article>
+  </section>
 
-                <div class="product">
-                    <img src="" alt="">
-                    <h3>Kikiam</h3>
-                    <p>₱1.00</p>
-                    <button>Add to Cart</button>
-                </div>
+  <section>
+    <h2>Fried Street Foods</h2>
+    <article>
+      <div class="product-list">
+        <div class="product">
+          <h3>Fishball</h3>
+          <p>P1</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Kikiam</h3>
+          <p>P3</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Chicken Balls</h3>
+          <p>P5</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Corndog Mini</h3>
+          <p>P15</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </article>
+  </section>
 
-                <div class="product">
-                    <img src="" alt="">
-                    <h3>Kwekek</h3>
-                    <p>₱5.00</p>
-                    <button>Add to Cart</button>
-                </div>
+  <section>
+    <h2>Drinks</h2>
+    <article>
+      <div class="product-list">
+        <div class="product">
+          <h3>Softdrinks</h3>
+          <p>P20</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Bottled Water</h3>
+          <p>P15</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Iced Tea</h3>
+          <p>P18</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Lemonade</h3>
+          <p>P25</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </article>
+  </section>
 
-                <div class="product">
-                    <img src="" alt="">
-                    <h3>Squidball</h3>
-                    <p>₱2.00</p>
-                    <button>Add to Cart</button>
-                </div>
+  <section class="cart-section">
+    <h2>Your Cart</h2>
+    <article>
+      <div id="cart-box">Cart is empty</div>
+    </article>
+  </section>
 
-                <div class="product">
-                    <img src="" alt="">
-                    <h3>Chickenball</h3>
-                    <p>₱2.00</p>
-                    <button>Add to Cart</button>
-                </div>
+</main>
 
-                <div class="product">
-                    <img src="" alt="">
-                    <h3>Hotdog</h3>
-                    <p>₱5.00</p>
-                    <button>Add to Cart</button>
-                </div>
-            </article>
-        </section>
-
-        <section class="cart">
-            <h2>Your Cart</h2>
-            <button class="checkout">Checkout</button>
-        </section>
-    </main>
-
+<script src="script.js"></script>
 </body>
 </html>

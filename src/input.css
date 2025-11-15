@@ -1,1 +1,91 @@
-@import "tailwindcss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  padding: 20px;
+}
+
+#main {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 25px;
+}
+
+section {
+  width: 72%;
+}
+
+.cart-section {
+  width: 28%;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #222;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.product {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  transition: 0.25s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.product h3 {
+  margin-bottom: 5px;
+}
+
+button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background: #ff7a00;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: #e16a00;
+}
+
+#cart-box {
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  min-height: 200px;
+}
+
+@media (max-width: 900px) {
+  #main {
+    flex-direction: column;
+  }
+
+  section,
+  .cart-section {
+    width: 100%;
+  }
+}
